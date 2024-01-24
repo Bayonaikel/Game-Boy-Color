@@ -1,0 +1,287 @@
+
+
+html {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    height: 1000px;
+    width: 1000px;
+    margin: 0 0 0 0;
+    display: flex;
+}
+
+/* ****************************************** Carcasa */
+
+.carcasa {
+    margin: auto;
+    height: 900px;
+    width: 515px;
+    background: rgb(255, 230, 30);
+    border-top-right-radius: 3%;
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border:black solid 1px;
+}
+
+/* ****************************************** Aqui comienza la pantalla */
+
+.Superior {
+    margin: 40px 25px 0px 25px;
+    height: 410px;
+    width: 465px;
+    background: rgb(22, 22, 22);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border:black inset 1px;
+    display: flex;
+}
+
+.pantalla {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 320px;
+    width: 330px;
+    margin: 30px auto auto auto;
+    background: grey;
+    border:1px solid rgb(0,0,0);
+}
+
+#video {
+    display: none;
+    background-color: white;
+    height: 320px;
+    width: 330px;
+}
+
+.Logo{
+    position: absolute;
+    top: 448px;
+    left: 430px;
+    height: 50px;
+    width: 150px;
+    object-fit: scale-down;
+}
+
+
+/* ****************************************** Aqui termina el contenido de la pantalla y comienza el Medio de la consola */
+
+.Medio {
+    height: 340px;
+    display: flex;
+}
+
+/* ****************************************** Pad de dirección */ 
+
+.pad {
+    position: absolute;
+    top:-50px;
+    left: 0px;
+}
+
+#centro {
+    position: absolute;
+    display: flex;
+    font-size: 2.5em;
+    background-color: rgb(65, 65, 70);
+    height: 40px;
+    width: 40px;
+    top: 681px;
+    left: 355px;
+    color: rgb(31, 31, 31);
+}
+
+#centro p{
+    margin: auto;
+    position:relative;
+    top: -9px;
+    color: black;
+}
+
+#arriba {
+    position: absolute;
+    display: flex;
+    font-size: 2.5em;
+    background-color: rgb(65, 65, 70);
+    height: 40px;
+    width: 40px;
+    top: 641px;
+    left: 355px;
+    color: rgb(31, 31, 31);
+    border:1px solid rgb(0,0,0);
+    border-bottom: none;
+	border-radius: 4px 4px 0px 0px;
+}
+
+#arriba p{
+    margin: auto;
+    position:relative;
+    top: -5px;
+    color: black;
+}
+
+#abajo {
+    position: absolute;
+    display: flex;
+    font-size: 2.5em;
+    background-color: rgb(65, 65, 70);
+    height: 40px;
+    width: 40px;
+    top: 721px;
+    left: 355px;
+    color: rgb(31, 31, 31);
+    border:1px solid rgb(0,0,0);
+	border-top: none;
+    border-radius: 0px 0px 4px 4px;
+}
+
+#abajo p{
+    margin: auto;
+    position:relative;
+    top: -9px;
+    color: black;
+}
+
+#derecha {
+    position: absolute;
+    display: flex;
+    font-size: 2.5em;
+    background-color: rgb(65, 65, 70);
+    height: 40px;
+    width: 40px;
+    top: 681px;
+    left: 395px;
+    color: rgb(31, 31, 31);
+    border:1px solid rgb(0,0,0);
+	border-left: none;
+	border-radius: 0px 4px 4px 0px;
+}
+
+#derecha p{
+    margin: auto;
+    position:relative;
+    top: -7px;
+    color: black;
+}
+
+#izquierda {
+    position: absolute;
+    display: flex;
+    font-size: 2.5em;
+    background-color: rgb(65, 65, 70);
+    height: 40px;
+    width: 40px;
+    top: 681px;
+    left: 315px;
+    color: rgb(31, 31, 31);
+    border:1px solid rgb(0,0,0);
+	border-right: none;
+    border-radius: 4px 0px 0px 4px;
+}
+
+#izquierda p{
+    margin: auto;
+    position:relative;
+    top: -9px;
+    color: black;
+}
+
+/* ****************************************** Botones A/B */
+
+.ab {
+    height: 180px;
+    width: 180px;
+    position: absolute;
+    top: 600px;
+    left: 520px;
+}
+
+#a {
+    position: absolute;
+    left: 120px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border:1px solid rgb(0,0,0);
+    background-color: rgb(65, 65, 70);
+}
+
+#b {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    height: 60px;
+    width: 60px;
+    border:1px solid rgb(0,0,0);
+    border-radius: 50%;
+    background-color: rgb(65, 65, 70);
+}
+
+#a p, #b p {
+    font-size: 2em;
+    font-family:'Trebuchet MS', sans-serif ;
+    position: relative;
+    top: -21px;
+    left: 21px;
+    color: black;
+}
+
+/* ****************************************** Aqui Termina el medio de la consola y comienza la parte inferior */
+
+.Inferior {
+    height: 140px;
+    display: flex;
+}
+
+/* ****************************************** Botones Select/Start */
+
+.ss {
+    height: 100px;
+    width: 150px;
+    position: relative;
+    left: 190px;
+    display: flex;
+}
+
+#select {
+    margin: 0 5px 0 0;
+    height: 20px;
+    width: 60px;
+    text-align: center;
+    border-radius: 30px;
+    border:1px solid rgb(0,0,0);
+    background-color: rgb(65, 65, 70);
+}
+
+#start {
+    margin: 0 0 0 5px;
+    height: 20px;
+    width: 60px;
+    text-align: center;
+    border-radius: 30px;
+    border:1px solid rgb(0,0,0);
+    background-color: rgb(65, 65, 70);
+}
+
+#sel, #str {
+    font-size: 1.2em;
+    font-family:'Trebuchet MS', sans-serif ;
+    margin-top: 25px;
+    color:rgb(10, 70, 110) ;
+}
+
+/* ****************************************** Altavoz */
+
+.altavoz {
+    position: absolute;
+    text-align: center;
+    font-size: 1.2em ;
+    font-weight: bold;
+    left:610px;
+    top:820px;
+    line-height: 12px;
+}
+
+/* ****************************************** Fin de la Consola */
